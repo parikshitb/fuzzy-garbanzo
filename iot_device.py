@@ -15,10 +15,6 @@ x509 = X509(
     pass_phrase=None
 )
 
-# SAS code
-#cstr = "HostName=plan-a-iothub0.azure-devices.net;DeviceId=first-device-key-authN;SharedAccessKey=Q8f7UipckwrD+PlFxjP8ZT4NF6rnz1njE/PAIcx5epo="
-#client = IoTHubDeviceClient.create_from_connection_string(cstr)
-
 # X509 code
 client = IoTHubDeviceClient.create_from_x509_certificate(
     x509 = x509,
